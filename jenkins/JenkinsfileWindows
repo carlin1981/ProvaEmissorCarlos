@@ -22,7 +22,7 @@ pipeline {
             steps {
                 script {
                     withSonarQubeEnv('SonarQubeServer') {  // 'SonarQubeServer' é o nome da instância configurada no Jenkins
-                        bat 'mvn clean verify sonar:sonar -Dsonar.projectKey=Prova -Dsonar.projectName=cadastro-app'
+                        bat 'mvn clean verify sonar:sonar -Dsonar.projectKey=galeria-app2 -Dsonar.projectName=cadastro-app'
                     }
                 }
             }
